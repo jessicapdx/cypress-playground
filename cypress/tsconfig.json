@@ -1,0 +1,18 @@
+{
+  "include": ["**/*.ts", "../cypress/support/index.d.ts"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "moduleResolution": "node",
+    "target": "es5",
+    "lib": ["es5", "dom"],
+    "isolatedModules": false,
+    "allowJs": true,
+    "noEmit": true,
+    "types": ["cypress", "node"],
+    "baseUrl": ".",
+    "paths": {
+      "@typings/*": ["../cypress/support/typings/*"],
+      "@page-objects/*": ["../cypress/support/page-objects/*"]
+    }
+  }
+}

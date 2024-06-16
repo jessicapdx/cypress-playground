@@ -1,0 +1,9 @@
+{
+  "plugins": ["cypress", "mocha", "chai-friendly"],
+  "parser": "babel-eslint",
+  "extends": [
+    "plugin:cypress/recommended",
+    "plugin:mocha/recommended",
+    "plugin:chai-friendly/recommended"
+  ]
+}
